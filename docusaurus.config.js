@@ -37,6 +37,29 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap",
+    "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap",
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap",
+  ],
+  scripts: [
+    "/js/jquery-3.7.0.min.js",
+    "/js/bootstrap.min.js",
+    "/js/modernizr.custom.js",
+    "/js/jquery.easing.js",
+    "/js/jquery.appear.js",
+    "/js/menu.js",
+    "/js/owl.carousel.min.js",
+    "/js/pricing-toggle.js",
+    "/js/jquery.magnific-popup.min.js",
+    "/js/quick-form.js",
+    "/js/jquery.validate.min.js",
+    "/js/jquery.ajaxchimp.min.js",
+    "/js/popper.min.js",
+    "/js/lunar.js",
+    "/js/wow.js",
+    "/js/custom.js",
+  ],
 
   presets: [
     [
@@ -46,11 +69,28 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
         },
+        pages: {
+          mdxPageComponent: '../src/components/MDXPage',
+        },
         blog: {
           showReadingTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./static/css/bootstrap.min.css'),
+            require.resolve('./static/css/flaticon.css'),
+            require.resolve('./static/css/menu.css'),
+            require.resolve('./static/css/dropdown-effects/fade-down.css'),
+            require.resolve('./static/css/magnific-popup.css'),
+            require.resolve('./static/css/owl.carousel.min.css'),
+            require.resolve('./static/css/owl.theme.default.min.css'),
+            require.resolve('./static/css/lunar.css'),
+            require.resolve('./static/css/animate.css'),
+            require.resolve('./static/css/blue-theme.css'),
+            require.resolve('./static/css/responsive.css'),
+            // require.resolve('./src/css/custom.css'),
+          ],
         },
       },
     ],

@@ -4,7 +4,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "docusaurus build"
+    "build": "docusaurus build",
+    "start": "docusaurus start"
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^1.1.0",
