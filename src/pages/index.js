@@ -3,6 +3,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import VideoTeaser from "../components/VideoTeaser";
 import Layout from "../components/Layout";
+import ButtonsBanner from "../components/ButtonsBanner";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -28,6 +29,13 @@ export default function Home() {
         subtitleParts={subtitleParts}
         videoSrc="https://www.youtube.com/embed/SZEflIVnhH8"
         imageSrc="/images/testGif.gif"
+      />
+      <ButtonsBanner
+        firstButtonUrl="#"
+        firstButton="Get started"
+        secondButtonUrl="#"
+        secondButton="Download"
+        subtitle="Available for Linux, Windows and MacOS"      
       />
     </Layout>
   );
