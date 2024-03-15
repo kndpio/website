@@ -10,7 +10,7 @@ function VideoTeaser(props) {
         <div className="row justify-content-center">
           <div className="col-md-10 col-lg-9 col-xl-10">
             <div className="hero-23-txt wow fadeInUp">
-            <HomePageLogo logoSrc="/img/logo.png"/>
+              <HomePageLogo logoSrc="/img/logo.png" />
 
               <h2 className="s-58 w-700">
                 {titleParts.map((part, index) =>
@@ -27,7 +27,7 @@ function VideoTeaser(props) {
               <p className="p-xl">
                 {subtitleParts.map((part, index) =>
                   part.color ? (
-                    <span key={index} className={`color--${part.color}`}>
+                    <span key={index} className={`color--${part.color}`}style={{fontWeight: 'bold'}}>
                       {part.text}
                     </span>
                   ) : (
@@ -42,14 +42,7 @@ function VideoTeaser(props) {
         <div className="row">
           <div className="col">
             <div className="hero-23-img video-preview wow fadeInUp">
-              <a className="video-popup1" href={props.videoSrc}>
-                <div className="video-btn video-btn-xl bg--theme">
-                  <div className="video-block-wrapper">
-                    <span className="flaticon-play-button"></span>
-                  </div>
-                </div>
-              </a>
-
+              <a className="video-popup1" href={props.videoSrc}></a>
               <img
                 className="img-fluid"
                 src={props.imageSrc}
