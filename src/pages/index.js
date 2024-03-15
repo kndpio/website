@@ -31,9 +31,9 @@ export default function Home() {
         imageSrc="/images/testGif.gif"
       />
       <ButtonsBanner
-        firstButtonUrl="#"
+        firstButtonUrl="/docs/overview"
         firstButton="Get started"
-        secondButtonUrl="#"
+        secondButtonUrl="/docs/cli/installation"
         secondButton="Download"
         subtitle="Available for Linux, Windows and MacOS"      
       />
