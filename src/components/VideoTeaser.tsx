@@ -1,5 +1,6 @@
 import React from "react";
 import HomePageLogo from "./HomePageLogo";
+import ButtonsBanner from "./ButtonsBanner";
 function VideoTeaser(props) {
   const titleParts = props.titleParts || [];
   const subtitleParts = props.subtitleParts || [];
@@ -24,21 +25,27 @@ function VideoTeaser(props) {
                 )}
               </h2>
 
-              <p className="p-xl">
+              <p className="p-xl" >
                 {subtitleParts.map((part, index) =>
                   part.color ? (
                     <span key={index} className={`color--${part.color}`}style={{fontWeight: 'bold'}}>
                       {part.text}
                     </span>
                   ) : (
-                    <span key={index}>{part.text}</span>
+                    <span key={index} style={{ fontWeight: 'normal' }}>{part.text}</span>
                   )
                 )}
               </p>
             </div>
           </div>
         </div>
-
+        <ButtonsBanner
+        firstButtonUrl="/docs/overview"
+        firstButton="Get started"
+        secondButtonUrl="/docs/cli/installation"
+        secondButton="Download"
+        subtitle="Available for Linux, Windows and MacOS"      
+      />
         <div className="row">
           <div className="col">
             <div className="hero-23-img video-preview wow fadeInUp">
