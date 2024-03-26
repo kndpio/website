@@ -158,13 +158,13 @@ const config = {
       ].filter(Boolean),
     },
     footer: {
-      logo: {
-        alt: 'Web Seven Logo',
-        src: 'img/logo_text.png',
-        href: 'https://web7.dev',
-        width: 70,
-      },
-      copyright: `Copyright © ${new Date().getFullYear()} Web Seven SRL. Built with Docusaurus.`,
+      // logo: {
+      //   alt: 'Web Seven Logo',
+      //   src: 'img/logo_text.png',
+      //   href: 'https://web7.dev',
+      //   width: 70,
+      // },
+      copyright: `Powered by Web7. Built with Docusaurus.`,
     },
   },
 };

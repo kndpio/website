@@ -15,18 +15,9 @@ export const Footer = (props) => {
   const {copyright} = footer;
 
   return (
-    <footer id="footer-3" className="pt-100 footer">
+    <footer id="footer-3" className="pt-100">
       <div className="container">
         <div className="row">
-          <div className="col-sm-12 col-md-3 col-xl-3">
-            <div className="footer-info">
-              <img
-                className="footer-logo"
-                src={props.logoSrc}
-                alt="footer-logo"
-              />
-            </div>
-          </div>
 
           {columns.map((column, columnIndex) => (
             <div key={columnIndex} className={`col-sm-12 col-md-3 col-xl-3`}>
@@ -52,55 +43,17 @@ export const Footer = (props) => {
             </div>
           ))}
 
-          <div className="col-sm-12 col-md-3 col-xl-3">
-            <div className="footer-links fl-4">
-              <h6 className="s-17 w-700">{contactsColumnTitle}</h6>
-
-              {addressItems.map((address) => (
-                  <div>{address}</div>
-              ))}
-              <br/>
-              {emailItems.map((email) => (
-                  <p className="footer-mail-link ico-25">
-                    <a href={email.emailLink}>{email.email}</a>
-                  </p>
-              ))}
-              
-              <ul className="footer-socials ico-25 text-center clearfix">
-                {socialItems.map((social, index) => (
-                  <li key={index}>
-                    <a href={social.url}>
-                      <span
-                        style={{ color: "gray", textDecoration: "none" }}
-                        className={social.icon}
-                      ></span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </div>
 
-        <hr />
 
         <div className="bottom-footer">
-          <div className="row row-cols-1 row-cols-md-2 d-flex align-items-center">
+          <div className="row row-cols-12 row-cols-md-12 d-flex align-items-center">
             <div className="col">
               <div className="footer-copyright">
-                <p className="p-sm">{copyright}</p>
+                <p className="p-sm text-center">{copyright}</p>
               </div>
             </div>
 
-            <div className="col">
-              <div className="bottom-secondary-link ico-15 text-end">
-                <p className="p-sm">
-                  <a href={props.copyrightSecondaryTextUrl}>
-                    {props.copyrightSecondaryText}
-                  </a>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
