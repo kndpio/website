@@ -28,7 +28,7 @@ const config = {
   // Set the production url of your site here
   url: 'https://kndp.io/',
   baseUrl: '/',
-  organizationName: 'web-seven', // Usually your GitHub org/user name.
+  organizationName: 'web7', // Usually your GitHub org/user name.
   projectName: 'kndp', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'warn',
@@ -133,24 +133,19 @@ const config = {
 
     navbar: {
       hideOnScroll: true,
-      title: '',
-      logo: {
-        alt: '',
-        src: '/img/logo.png',
-        srcDark: '/img/logo_dark.png',
-      },
+      title: 'KNDP',
       items: [
-        { to: '/why-kndp', label: 'Why KNDP?', position: 'right' },
+        // { to: '/why-kndp', label: 'Why KNDP?', position: 'right' },
         {
           type: 'doc',
           position: 'right',
           docId: 'overview',
           label: 'Documentation',
         },         
-        { to: '/community', label: 'Community', position: 'right' },
-        { to: '/blog', label: 'Blog', position: 'right' },
+        // { to: '/community', label: 'Community', position: 'right' },
+        // { to: '/blog', label: 'Blog', position: 'right' },
         {
-          href: 'https://github.com/web-seven/kndp',
+          href: 'https://github.com/kndpio',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
