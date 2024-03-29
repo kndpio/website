@@ -7,18 +7,26 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# Install KNDP CLI
+# Install the KNDP command-line
 
 ### Prerequisites
 
 1. Linux-based operating system. This script is designed for Linux-based operating systems, specifically tested on Ubuntu.
 1. Internet access for package downloads.
-1. Administrative privileges. Ensure you have administrative privileges to execute certain commands (e.g., sudo).
+1. Kubernetes engine installed locally, supported: KinD, k3s, k3d
 
-### Installing the CLI
+### Installing from GitHub Releases
 
-To download the latest KNDP install script:
-
+Install the latest version of the KNDP command-line via shell script by downloading the install script from KNDP GitHub Releases.
+Downloading packages requires both the version and CPU architecture (linux-amd64).
 ```bash
-curl -sSf https://raw.githubusercontent.com/kndpio/kndp/release/0.1/scripts/install.sh | sudo sh
+VERSION="0.0.7" 
+ARCH="linux-amd64"
+curl -Lo ./kndp.tar.gz "https://github.com/kndpio/cli/releases/download/${VERSION}/kndp-${VERSION}-${ARCH}.tar.gz"; tar -xf ./kndp.tar.gz; rm ./kndp.tar.gz
+mv ./kndp /some-dir-in-your-PATH/kndp
+```
+
+### Verify installation
+```bash
+kndp --version
 ```
