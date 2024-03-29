@@ -23,7 +23,7 @@ Downloading packages requires both the version and CPU architecture (linux-amd64
 VERSION="0.0.7" 
 ARCH="linux-amd64"
 curl -Lo ./kndp.tar.gz "https://github.com/kndpio/cli/releases/download/${VERSION}/kndp-${VERSION}-${ARCH}.tar.gz"; tar -xf ./kndp.tar.gz; rm ./kndp.tar.gz
-mv ./kndp /some-dir-in-your-PATH/kndp
+sudo mv ./kndp /usr/local/bin/kndp
 ```
 
 ### Verify installation
