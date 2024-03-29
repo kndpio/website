@@ -20,18 +20,60 @@ This guide will provide you with all the information you need to get started wit
 
 Let's dive in! 🏊‍♀️
 
-## Basic Usage
-
-Here's the basic syntax for using KNDP CLI:
+## Available commands
 
 ```bash
-kndp [options] 
+Usage: kndp <command>
 
-Options:
-- `help`, `-h`: Display a list of available commands and options. ❓
-- `install`, `-i`: Install KNDP platform on your system.
-- `uninstall`, `-u`: Uninstall KNDP platform from your system.
-- `upgrade`: upgrade KNDP platform.
+Kubernetes Native Development Platform CLI.
+
+For more details open https://kndp.io
+
+Flags:
+  -h, --help       Show context-sensitive help.
+  -D, --debug      Enable debug mode
+      --version    Print version information and quit
+
+Commands:
+  help                       Show help.
+
+  environment (env)          KNDP Environment commands
+    create                   Create an Environment
+      [<name>]               Name of environment.
+    delete                   Delete an Environment
+      <name>                 Name of environment.
+    copy                     Copy an Environment to another destination context
+      <source>               Name source of environment.
+      <destination>          Name destination of environment.
+    list                     List of Environments
+
+  configuration (cfg)        KNDP Configuration commands
+    apply                    Apply Crossplane Configuration.
+      <link>                 Link URL to Crossplane configuration to be applied to Environment.
+    list                     Apply Crossplane Configuration.
+    delete                   Delete Crossplane Configuration.
+      <configuration-url>    Specifies the URL of configuration to be deleted from Environment.
+
+  resource (res)             KNDP Resource commands
+    create                   Create an XR
+      <type>                 XRD type name.
+    list                     List of XRs
+    apply                    Apply an XR
+
+  registry (reg)             Packages registy commands
+    create                   Create registry
+    list                     List registries
+    delete                   Delete registry
+
+  install-completions        Install shell completions
+
+  provider                   KNDP Provider commands
+    install                  Install Crossplane Provider.
+      <provider-url>         Provider URL to Crossplane provider to be installed to Environment.
+    list                     Install Crossplane Provider.
+
+Run "kndp <command> --help" for more information on a command.
+
 
 ```
 
