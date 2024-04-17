@@ -89,7 +89,7 @@ const config = {
             require.resolve('./static/css/animate.css'),
             require.resolve('./static/css/blue-theme.css'),
             require.resolve('./static/css/responsive.css'),
-            // require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/custom.css'),
           ],
         },
       },
@@ -145,7 +145,7 @@ const config = {
         // { to: '/community', label: 'Community', position: 'right' },
         // { to: '/blog', label: 'Blog', position: 'right' },
         {
-          href: 'https://github.com/kndpio',
+          href: 'https://github.com/kndpio/cli',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
