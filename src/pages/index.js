@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
           <ButtonsBanner
-            firstButtonUrl="/docs/overview"
+            firstButtonUrl="/docs/cli/installation"
             firstButton="Get started"
             secondButtonUrl="https://github.com/kndpio/cli/releases"
             secondButton="Download"
