@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = {
   themeConfig: {
     colorMode: {
@@ -33,6 +34,9 @@ const config = {
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  customFields: {
+    version: process.env.VERSION,
+  },
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
